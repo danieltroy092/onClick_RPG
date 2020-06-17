@@ -11,17 +11,67 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <!----------- HEADER START ------------->
-    <div class="header"></div>
+    <!------------- HEADER START --------------->
+    <div class="header">
+      <p>Play the greatest RPG ever to be made!</p>
+      <h2>Choose your character!</h2>
+    </div>
     <!----------- INTERFACE START ------------->
-    <div class="interface"></div>
-    <!----------- ACTIONS START ------------->
+    <div class="interface">
+      <!------------- Warrior Class----------------->
+      <a href="#" onclick="">
+        <img src="./img/warrior.png" alt="warrior" />
+        <div>
+          <h3>Warrior</h3>
+          <p>
+            Warriors have higher health and stamina, however their strength also
+            makes them slower and clumsier.
+          </p>
+        </div>
+      </a>
+      <!------------- Mage Class----------------->
+      <a href="#" onclick="">
+        <img src="./img/mage.png" alt="mage" />
+        <div>
+          <h3>Mage</h3>
+          <p>
+            Mages are glass canons which puts all their effort into spells. This
+            means they slack on everything else.
+          </p>
+        </div>
+      </a>
+      <!------------- Rogue Class----------------->
+      <a href="#" onclick="">
+        <img src="./img/rogue.png" alt="rogue" />
+        <div>
+          <h3>Rogue</h3>
+          <p>
+            Rogues are fast and have high stamina and speed which makes up for
+            their lack in strength and health.
+          </p>
+        </div>
+      </a>
+      <!------------- Hunter Class----------------->
+      <a href="#" onclick="">
+        <img src="./img/hunter.png" alt="hunter" />
+        <div>
+          <h3>Hunter</h3>
+          <p>
+            Hunters are well rounded fighters that focus on evening out their
+            skills. No strengths or weaknesses.
+          </p>
+        </div>
+      </a>
+    </div>
+    <!------------ ACTIONS START -------------->
     <div class="actions"></div>
-    <!----------- ARENA START ------------->
+    <!------------- ARENA START --------------->
     <div class="arena"></div>
-    <!----------- ENEMY START ------------->
+    <!------------- ENEMY START --------------->
     <div class="enemy"></div>
 
-    <script src="/script.js"></script>
+    <script src="/js/gameManager.js"></script>
+    <script src="/js/player.js"></script>
+    <script src="/js/enemy.js"></script>
   </body>
 </html>
