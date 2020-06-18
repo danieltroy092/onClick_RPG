@@ -27,7 +27,7 @@ let GameManager = {
       classType.toLowerCase() +
       '.png" class="img-avatar"><div><h3>' +
       classType +
-      '</h3><p>Health: ' +
+      '</h3><p class="health-player">Health: ' +
       player.health +
       '</p><p>Mana: ' +
       player.mana +
@@ -75,7 +75,7 @@ let GameManager = {
         break;
     }
     // Manipulate the DOM to set values for enemy attributes per enemyType
-    getHeader.innerHTML = '<p>Task: Choose your move!</p>';
+    getHeader.innerHTML = '<p>Task: Attack!!</p>';
     getActions.innerHTML =
       '<a href="#" class="btn-prefight" onclick="PlayerMoves.calcAttack()">Attack!</a>';
     getEnemy.innerHTML =
@@ -83,7 +83,7 @@ let GameManager = {
       enemy.enemyType.toLowerCase() +
       '.png" class="img-avatar"><div><h3>' +
       enemy.enemyType +
-      '</h3><p>Health: ' +
+      '</h3><p class="health-enemy">Health: ' +
       enemy.health +
       '</p><p>Mana: ' +
       enemy.mana +
